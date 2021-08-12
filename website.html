@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Responsive </title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <script src="javascript.js"></script>
+
+    <link rel="stylesheet" href="style.css">
+    
+  <!-- script for menubar  -->
+    <script>
+        function opendiv(){
+ document.getElementById("menu").style.display= "block";
+
+ }
+
+ function closediv() {
+  document.getElementById("menu").style.display= "none";
+ 
+
+ }
+    </script>
+</head>
+<body>
+
+  <!-- header section starts  -->
+
+<header id="header">
+
+
+
+<nav>
+  <ul><a href="#" class="logo"><img src="images/L.png" alt=" logo"></a></ul>
+  <ul class="fs-2 " id="nav-contents">
+    <li><a href="#home">home</a></li>
+    <li><a href="#course">courses</a></li>
+    <li><a href="#service">services</a></li>
+    <li><a href="#testimonial">testimonials</a></li>
+    <li><a href="#contact" >contact</a></li>
+    <li><a href="#login"  style="color: #00B894;margin-top: -4px;"class="nav-link" data-toggle="modal"><i class="fa fa-sign-in"></i> Login</a></li>
+    <li><a href="#register" class="nav-link" data-toggle="modal"style="color:  #00B894;margin-top: -4px;"><i class="fa fa-user-plus"></i> Register</a></li>
+   
+  </ul>
+  <!-- this is menubar icon  -->
+  <ul id="homeicon">  <li  id= "menubar" class="fa fa-bars  text-decoration-none fs-1" onclick="opendiv()"></li> </ul>
+</nav>
+
+
+</header>
+
+
+<!-- this div will open after clicking on menubar icon  -->
+<div id= "menu" class="px-4 py-4 text-decoration-none bg-dark text-light"> 
+  <p class= "fa fa-times fs-1 btn btn-outline-warning float-right" id= "close" onclick="closediv()"></p>
+  <ul class="list-style-type-none fs-2">
+    <li><a href="#home">home</a></li>
+    <li><a href="#course">courses</a></li>
+    <li><a href="#service">services</a></li>
+    <li><a href="#testimonial">testimonials</a></li>
+    <li><a href="#contact" >contact</a></li>
+    <li><a href="#login" class="nav-link" data-toggle="modal"><i class="fa fa-sign-in"></i> Login</a></li>
+    <li><a href="#register" class="nav-link" data-toggle="modal"><i class="fa fa-user-plus"></i> Register</a></li>
+  </ul>
+  
+ </div>
+
+<!-- header section ends -->
+
+<!-- home section starts  --><br><br><br><br><br><br><br><br><br>
+  <!-- Login Modal -->
+  <div class="modal fade" id="login">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content form-wrapper">
+        <div class="close-box" data-dismiss="modal">
+          <i class="fa fa-times fa-2x"></i>
+        </div>
+        <div class="container-fluid mt-5">
+          <form action="" method="post" id="LoginForm">
+            <div class="form-group text-center">
+              <h4 style="font-size: 20px; color:red">Login Form</h4>
+              <h6>Enter your Credentials</h6>
+            </div>
+            <div class="form-group" style="position: relative;">
+              <label for="l_email">Email</label>
+              <input type="email" id="l_email" class="form-control mb-1" placeholder="abc@gmail.com" required>
+              
+              
+              
+            </div>
+            <div class="form-group pb-3" style="position: relative;">
+              <label for="l_password">Password</label>
+              <input type="password" id="l_password" class="form-control mb-1" placeholder="*******************" required>
+              <a href="#forgotPassword" style="display:block; position: absolute; right: 0;" title="Fill Email Field and Click it">
+                Forgot Password?
+              </a>
+            </div>
+            <div class="form-group pt-2">
+              <button href="#" class="btn btn-info form-control">Login</button>
+            </div>
+            <div class="form-group text-center pt-2 social-login">
+              <h6>OR Continue with</h6>
+              <a href="#" class="google"> <i class="fa fa-google-plus fa-lg"></i> </a>
+              <a href="#" class="facebook"> <i class="fa fa-facebook fa-lg"></i> </a>
+              <a href="#" class="twitter"> <i class="fa fa-twitter fa-lg"></i> </a>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Registeration Modal -->
+  <div class="modal fade" id="register">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content form-wrapper">
+        <div class="close-box" data-dismiss="modal">
+          <i class="fa fa-times fa-2x"></i>
+        </div>
+        <div class="container-fluid mt-5">
+          <form action="#" method="post" id="RegisterationForm">
+            <div class="form-group text-center pb-2">
+              <h4 style="font-size: 20px; color:red">Registration Form</h4>
+            </div>
+            <div class="form-row">
+              <div class="form-group col">
+                <label for="name">Name</label>
+                <input type="text" id="name" class="form-control" placeholder="Your name" required>
+              </div>
+             
+            </div>
+            <div class="form-group" style="position:relative;">
+              <label for="email">Email</label>
+              <input type="email" id="email" class="form-control mb-1" placeholder="abc@gmail.com" required>
+              <a href="#" data-toggle="modal" data-target="#login" style="display:none; position: absolute; right: 0; font-size: 12px;">That's you? Login</a>
+             
+            </div>
+            <div class="form-row mb-1">
+              <div class="form-group col">
+                <label for="password">Password</label>
+                <input type="password" id="password" class="form-control" placeholder="*******************" required>
+               
+              </div>
+              <div class="form-group col">
+                <label for="password_confirmation">Confirm Password</label>
+                <input type="password" id="password_confirmation" class="form-control" placeholder="*******************" required>
+              </div>
+            </div><br><br>
+
+            <div class="form-group">
+              <button href="#"  class="btn btn-info form-control" >Register</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js" integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em" crossorigin="anonymous"></script>
+
+<section id="home" class="container-fluid">
+
+<div class="row align-items-center min-vh-100 content">
+
+<div class="col-md-8 ml-md-5 text-center text-left">
+
+  <h2>online</h2>
+  <h1>education</h1>
+  <h3>learn online from home</h3>
+
+  <a href="https://www.w3schools.com/"><button> enroll now >></button></a>  
+<br>
+<br><br>   <div class="icons">
+    <a href="https://www.facebook.com/arunkumar.solanki.714"  class="fa fa-facebook"></a>
+    <a href="#" class="fa fa-twitter"></a>
+    <a href="https://www.instagram.com/kumarrun.432?r=nametag" class="fa fa-instagram"></a>
+    <a href="#" class="fa fa-linkedin"></a>
+  </div> 
+
+</div>
+
+</div>
+
+
+</section>
+
+<!-- home section ends -->
+
+<!-- course section starts  -->
+
+<section id="course">
+
+<h1 class="heading">our latest courses</h1>
+
+<div class="box-container">
+
+  <div class="box" data-aos="flip-right">
+    <a href="https://www.w3schools.in/c-tutorial/">
+    <img src="images/C1.png" alt=" C programming"  style="margin-left: 5px; margin-top: 70px;padding:10%" >
+    <p>Learn C programming with us. <br>Do Practically by Own as well, Mock test and Assignments also availble and Get certificate After the Test</p>
+    </a>
+  </div>
+
+  <div class="box" data-aos="flip-down">
+    <a href="https://www.w3schools.com/cpp/">
+        <img src="images/Cpp1.png" alt=" C++ Programming"  style="margin-left: 20px;  height:280px;margin-top: 70px;padding:10%">
+    <p>Learn C++ programming with us.<br>Do Practically by Own as well, Mock test and Assignments also availble and Get certificate After the Test</p> 
+ 
+  </a>  
+</div>
+  <div class="box" data-aos="flip-left">
+    <a href="https://www.w3schools.com/cs/index.php">
+    <img src="images/C sharp.jpg" alt=" C#"        style="margin-left: 10px;  height:300px;margin-top: 75px;padding:10%">
+    <p>Learn C# programming with us. <br>Do Practically by Own as well, Mock test and Assignments also availble and Get certificate After the Test</p>
+  </a>
+</div>
+
+  <div class="box" data-aos="flip-right">
+    <a href="https://www.w3schools.com/python/">
+    <img src="images/python1.png" alt=" Python Programming"  style=" margin-left:25px;  height:250px;margin-top: 50px;padding:10%">
+    <p>Learn Python programming with us. <br>Do Practically by Own as well, Mock test and Assignments also availble and Get certificate After the Test</p>
+  </a>
+ </div>
+
+  <div class="box" data-aos="flip-up">
+    <a href="https://www.w3schools.com/sql/default.Asp">
+    <img src="images/sql.jpg" alt=" SQL Language" style="width:100%;height: 70%; margin-top: 50px;padding:20%">
+    <p>Learn SQL LAnguage with us. <br>Do Practically by Own as well, Mock test and Assignments also availble and Get certificate After the Test</p>
+  </a>
+</div>
+
+  <div class="box" data-aos="flip-right">
+    <a href="https://www.w3schools.com/java/">
+    <img src="images/java1.png" alt=" Java Programming" style="height: 50%;margin-left:35px; margin-top: 70px;">
+    <p>Learn Java programming with us. <br>Do Practically by Own as well, Mock test and Assignments also availble and Get certificate After the Test</p>
+  </a>
+  </div>
+
+</div>
+
+</section>
+
+
+
+
+<!-- service section starts  -->
+
+<section id="service">
+
+<h1 class="heading">what we offer?</h1>
+
+<div class="box-container">
+
+  <div class="box" data-aos="flip-up">
+  
+    <div class="info">
+      <h2>skilled teachers</h2>
+      <p>Study with Notes written Our highly Quallified Teachers, Teachers are also Professores in Ramanujan College( University Of Delhi). Teachers are
+        1. Mr. Kamlesh Raghuvanshi 2.Ms. Ashima Jain 3.Ms.Nidhi Mathur 4.Ms.Anjali Gupta 5.Mr.Abhinesh Kaushik   </p>
+    </div>
+  </div>
+
+  <div class="box" data-aos="flip-down">
+    <div class="info">
+      <h2>24x7 hours service</h2>
+      <p>We are available 24*7 for you. you can call us on Mon-Fri in working hours 9am-5pm.
+        if you have any suggestion or complain then  fill the feedback form. we will back you within 48 hours.  </p>
+    </div>
+  </div>
+
+  <div class="box" data-aos="flip-up">
+    <div class="info">
+      <h2>certificate distribution</h2>
+      <p>We provides you the certificate after giving  a skill test. we provides you the virtual certificate and we will take a small amount for that certificate.</p>
+    </div>
+  </div>
+
+</div>
+
+</section>
+
+
+<!-- testimonials section starts  -->
+
+<section id="testimonial">
+
+<h1 class="heading">what our students says</h1>
+
+<div class="box-container">
+
+<div class="box" data-aos="flip-left">
+  <img src="images/s1.jpg" alt="">
+  <div class="info">
+    <p><i class="fas fa-quote-left"></i>Despite the unlimited resources available on internet but there course material is easy to understand.
+     I like this Platform and i learned alot!! Tanku so much.<i class="fas fa-quote-right"></i></p>
+    <h2>--Sweta Mishra</h2>
+  </div>
+</div>
+
+<div class="box" data-aos="flip-right">
+  <img src="images/s2.jpg" alt="">
+  <div class="info">
+    <p><i class="fas fa-quote-left"></i>Best Python Language material is here, i am from EE branch this course is really helpful for me. Thanks!<i class="fas fa-quote-right"></i></p>
+    <h2>--Krishna Chandila</h2>
+  </div>
+</div>
+
+<div class="box" data-aos="flip-left">
+  <img src="images/s3.jpg" alt="">
+  <div class="info">
+    <p><i class="fas fa-quote-left"></i>I have done all the programming language from this plateform and i got all the certificates from this site, these certificate very helpful for me to a get my job.<i class="fas fa-quote-right"></i></p>
+    <h2>--Anusha Atrish</h2>
+  </div>
+</div>
+
+<div class="box" data-aos="flip-right">
+  <img src="images/s4.jpg" alt="">
+  <div class="info">
+    <p><i class="fas fa-quote-left"></i>Now i am a Software developer in Google and got the certificates from here which is valid in all MNC's. This plateform is really helpful in Covid time period. thanku so much!!<i class="fas fa-quote-right"></i></p>
+    <h2>--Sourav Pal</h2>
+  </div>
+</div>
+
+</div>
+
+</section>
+
+
+<!-- contact section starts  -->
+
+<section id="contact" class="container-fluid">
+
+<h1 class="heading">get in touch </h1>
+
+
+<div class="row min-vh-75 align-items-center min-vw-100">
+
+<div class="col-lg-5 col-md-8  mx-auto">
+ 
+ 
+<form action="" data-aos="zoom-in">
+
+  <div class="inputBox">
+    <input type="text" required>
+      <h3>full name</h3>
+  </div>
+
+  <div class="inputBox">
+    <input type="email" required>
+      <h3>e-mail</h3>
+  </div>
+
+  <div class="inputBox">
+    <input type="number" required>    
+      <h3>phone</h3>
+  </div>
+
+  <div class="inputBox">
+    <textarea cols="30" rows="10" required></textarea>
+    <h3>message</h3>
+  </div>
+
+  <div class="inputBox">
+    <input type="submit">
+  </div>
+
+</form>
+
+
+</div>
+
+</div>
+
+</section>
+
+
+
+
+<!-- footer section starts  -->
+
+<footer class="footer">
+  <div class="container">
+    <div class="row">
+      <div class="footer-col">
+        <h4>Skilled Teachers</h4>
+        <ul>
+          <li><a href="#">Mr. Kamlesh Raghuvanshi</a></li>
+          <li><a href="#">Ms. Ashima Jain</a></li>
+          <li><a href="#">Ms.Nidhi Mathur</a></li>
+           <li><a href="#">Ms.Anjali Gupta</a></li>
+           <li><a href="#">Mr.Abhinesh Kaushik</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+      <a href="#course" style="text-decoration: none;">  <h4>Courses</h4></a>
+        <ul>
+          <li><a href="#course">C Language</a></li>
+          <li><a href="#course">C++ Language</a></li>
+          <li><a href="#course">C# Language</a></li>
+          <li><a href="#course">Python</a></li>
+          <li><a href="#course">SQL</a></li>
+          <li><a href="#course">Java</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Contact us</h4>
+        <ul>
+          <li><a href="#"  class="fa fa-envelope">-Kumarrun2812@gmail.com</a></li><br>
+          <li><a href="#"  class="fa fa-phone"> -0129-32-21675</a></li>
+          <li><a href="#"  class="fa fa-address"><span class="fa fa-home"></span>- . 123 Main Street, <br>New Delhi,India </a></li>
+          <li><a href="#"></a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>follow us</h4>
+        <div class="social-links">
+          <a href="https://www.facebook.com/arunkumar.solanki.714"  class="fa fa-facebook fs-2"></a>
+          <a href="#" class="fa fa-twitter fs-2"></a>
+          <a href="https://www.instagram.com/kumarrun.432?r=nametag" class="fa fa-instagram fs-2"></a>
+          <a href="#" class="fa fa-linkedin fs-2"></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+
+
+
+
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      delay:500
+    });
+</script>
+
+
+</body> 
+</html>
